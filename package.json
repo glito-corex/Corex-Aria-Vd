@@ -1,0 +1,41 @@
+{
+  "name": "corex-aria-vd",
+  "version": "1.0.0",
+  "description": "Corex-Aria-vd",
+  "main": "main.js",
+  "author": "Corex Institut",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^44.7.0",
+    "electron-builder": "^26.15.3"
+  },
+  "build": {
+    "appId": "com.corex.aria.vd",
+    "productName": "Corex Aria vd",
+    "asar": true,
+    "compression": "maximum",
+    "files": [
+      "main.js",
+      "index.js",
+      "ressources/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "ressources/corex_aria.ico"
+    },
+    "nsis": {
+      "installerIcon": "ressources/corex_aria.ico",
+      "uninstallerIcon": "ressources/corex_aria.ico",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "deleteAppDataOnUninstall": true
+    }
+  }
+}
