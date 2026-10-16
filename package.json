@@ -28,11 +28,11 @@
     ],
     "win": {
       "target": "nsis",
-      "icon": "ressources/corex_aria.ico"
+      "icon": "ressources/ico.png"
     },
     "nsis": {
-      "installerIcon": "ressources/corex_aria.ico",
-      "uninstallerIcon": "ressources/corex_aria.ico",
+      "installerIcon": "ressources/ico.png",
+      "uninstallerIcon": "ressources/ico.png",
       "oneClick": false,
       "allowToChangeInstallationDirectory": true,
       "deleteAppDataOnUninstall": true
