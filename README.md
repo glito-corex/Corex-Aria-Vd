@@ -6,6 +6,9 @@
 
 How to use Corex-Aria-vd Desktop
 
+virus total analyse
+https://www.virustotal.com/gui/file/811c5c328bea41398061d4de9af150895fd32fb5564505a1c76526e11595d95c?nocache=1
+
 ## Prerequisites
 Before you start, you need to install Node.js.
 
