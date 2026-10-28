@@ -1,3 +1,59 @@
-{
-  "hash": ""
-}
+[ 
+  { 
+    [
+      use /! set { * [true] go to set}
+    ],
+    "name": "Corex-Aria-VD",
+    "licence": [
+      licence
+    ],
+    "set": [
+      name => {name (Corex)} && { another [false] & data use [false] & publish || ( true )}
+      version => { true [ * ] (lasted & datelasted)}
+      lasted => { * (1.1.0 & 1.0.0)}
+      datelasted => { 1.1.0 (dt & "28.10.2026" )} && { 1.0.0 (dt a "2-weeks")}
+      licence => { https (link)} && { false (http) & (www.)}
+      exe-setup => { 1.1.0 [https] (link) && 1.0.0 [https] (link)} && { false (http) & (www.)}
+      link-releases => { * [all] (link)} && { false (http) & (www.)}
+    ],
+    "another": {
+      "*": false
+    }
+  },
+  {
+  "version": "lasted",
+    "datelasted"
+  },
+  "lasted": [
+    {
+    "*": {
+      "1.1.0",
+      "1.0.0"
+      }
+    },
+    "datelasted": [
+      {
+        "1.1.0": {
+          "dt": "28.10.2026"
+        },
+        "1.0.0": {
+          "dt": "2-weeks"
+        }
+      }
+    ],
+    "licence": [
+      link => https://github.com/glito-corex/Corex-Aria-Vd/blob/main/Licence
+    ],
+    "exe-setup": [
+     (1.1.0) = link => https://github.com/glito-corex/Corex-Aria-Vd/releases/download/v1.1.0/Corex-Aria-vd.Setup.exe
+     (1.0.0) = link => https://github.com/glito-corex/Corex-Aria-Vd/releases/download/AI/Corex-Aria-vd-Setup.exe
+    ],
+    "link-releases": [
+      {
+        "*": [
+          (all) = link => https://github.com/glito-corex/Corex-Aria-Vd/releases
+        ]
+      }
+    ]
+  ]
+]
