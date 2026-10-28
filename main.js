@@ -126,8 +126,5 @@ if (!lck) {
     //call (crWindow) for create root page 
     app.whenReady().then(async () => {
         crWindow();
-        if (app.isPackaged) {
-            autoUpdater.checkForUpdatesAndNotify();
-        }
     });
 }
