@@ -1,5 +1,10 @@
-[ 
-  { 
+[ { //use for ai 
+    [ 
+      ai-link => https://perchance.org/corex-aria-vd
+      ai-home-corex-link => https://corexinstitut.netlify.app/corexai
+    ]
+  },
+  {
     [
       use /! set { * [true] go to set}
     ],
