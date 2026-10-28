@@ -9,104 +9,30 @@
         //-------------------------------------------------------------
 //
 //set function (attendreBody)
-function attendreBody() {
+function rmv() {
     if (document.body) {
         //set entry point to the content
-        const adCtnncorexariawrappembed = document.getElementById("adCtn");
-        const menuBarEllcorexariawrappembed = document.getElementById("menuBarEl");
-        const perchancecrxariatycorexariawrappembed = document.getElementById("perchance-error-indicator");
-        const minimalModeMenuBtnncorexariawrappembed = document.getElementById("minimalModeMenuBtn");
-        const perchanceConsoleElcorexariawrappembed = document.getElementById("perchanceConsoleEl");
-        const mainModelTextEditorCtncorexariawrappembed = document.getElementById("mainModelTextEditorCtn");
-        const gutter_verticalcorexariawrappembed = document.querySelector('#main .gutter.gutter-vertical');
-        const mainOutputTemplateEditorCtncorexariawrappembed = document.getElementById("mainOutputTemplateEditorCtn");
-        const statusElcorexariawrappembed = document.getElementById("statusEl");
+        const corexembedremovecontentUI = document.querySelectorAll("#adCtn, #menuBarEl, #perchance-error-indicator, #minimalModeMenuBtn, #perchanceConsoleEl, #mainModelTextEditorCtn, #mainOutputTemplateEditorCtn");         
+        const gutterverticalcorexariawrappembed = document.querySelector('#main .gutter.gutter-vertical');
 
-        //use entry point and remove content
-        if (adCtnncorexariawrappembed) {
-            adCtnncorexariawrappembed.remove();
-        }
+        //use entry point for remove content
+        corexembedremovecontentUI.forEach(el => el.remove());
 
-        if (menuBarEllcorexariawrappembed) {
-            menuBarEllcorexariawrappembed.remove();
-        }
-
-        if (perchancecrxariatycorexariawrappembed) {
-            perchancecrxariatycorexariawrappembed.remove();
-        }
-
-        if (minimalModeMenuBtnncorexariawrappembed) {
-            minimalModeMenuBtnncorexariawrappembed.remove();
-        }
-
-        if (perchanceConsoleElcorexariawrappembed) {
-            perchanceConsoleElcorexariawrappembed.remove();
-        }
-
-        if (mainModelTextEditorCtncorexariawrappembed) {
-            mainModelTextEditorCtncorexariawrappembed.remove();
-        }
-
-        if (gutter_verticalcorexariawrappembed) {
-            gutter_verticalcorexariawrappembed.remove();
-        }
-
-        if (mainOutputTemplateEditorCtncorexariawrappembed) {
-            mainOutputTemplateEditorCtncorexariawrappembed.remove();
-        }
-
-        if (statusElcorexariawrappembed) {
-            statusElcorexariawrappembed.remove();
+        if (gutterverticalcorexariawrappembed) {
+            gutterverticalcorexariawrappembed.remove();
         }
 
         //set mutationObserver 
         const observer = new MutationObserver(function () {
             //set entry point to the content
-            const adCtnncorexariawrappembed = document.getElementById("adCtn");
-            const menuBarEllcorexariawrappembed = document.getElementById("menuBarEl");
-            const perchancecrxariatycorexariawrappembed = document.getElementById("perchance-error-indicator");
-            const minimalModeMenuBtnncorexariawrappembed = document.getElementById("minimalModeMenuBtn");
-            const perchanceConsoleElcorexariawrappembed = document.getElementById("perchanceConsoleEl");
-            const mainModelTextEditorCtncorexariawrappembed = document.getElementById("mainModelTextEditorCtn");
-            const gutter_verticalcorexariawrappembed = document.querySelector('#main .gutter.gutter-vertical');
-            const mainOutputTemplateEditorCtncorexariawrappembed = document.getElementById("mainOutputTemplateEditorCtn");
-            const statusElcorexariawrappembed = document.getElementById("statusEl");
+            const corexembedremovecontentUI = document.querySelectorAll("#adCtn, #menuBarEl, #perchance-error-indicator, #minimalModeMenuBtn, #perchanceConsoleEl, #mainModelTextEditorCtn, #mainOutputTemplateEditorCtn");
+            const gutterverticalcorexariawrappembed = document.querySelector('#main .gutter.gutter-vertical');
 
-            //use entry point and remove content
-            if (adCtnncorexariawrappembed) {
-                adCtnncorexariawrappembed.remove();
-            }
+            //use entry point for remove content
+            corexembedremovecontentUI.forEach(el => el.remove());
 
-            if (menuBarEllcorexariawrappembed) {
-                menuBarEllcorexariawrappembed.remove();
-            }
-
-            if (perchancecrxariatycorexariawrappembed) {
-                perchancecrxariatycorexariawrappembed.remove();
-            }
-
-            if (minimalModeMenuBtnncorexariawrappembed) {
-                minimalModeMenuBtnncorexariawrappembed.remove();
-            }
-
-            if (perchanceConsoleElcorexariawrappembed) {
-                perchanceConsoleElcorexariawrappembed.remove();
-            }
-
-            if (mainModelTextEditorCtncorexariawrappembed) {
-                mainModelTextEditorCtncorexariawrappembed.remove();
-            }
-
-            if (gutter_verticalcorexariawrappembed) {
-                gutter_verticalcorexariawrappembed.remove();
-            }
-
-            if (mainOutputTemplateEditorCtncorexariawrappembed) {
-                mainOutputTemplateEditorCtncorexariawrappembed.remove();
-            }
-
-            if (statusElcorexariawrappembed) {
-                statusElcorexariawrappembed.remove();
+            if (gutterverticalcorexariawrappembed) {
+                gutterverticalcorexariawrappembed.remove();
             }
         });
 
@@ -119,8 +45,8 @@ function attendreBody() {
         return;
     }
     //Set the loop
-    setTimeout(attendreBody, 10);
+    setTimeout(rmv, 10);
 }
 
 //call function (attendreBody)
-attendreBody();
+rmv();

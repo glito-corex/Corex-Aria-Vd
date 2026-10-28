@@ -1,6 +1,6 @@
 {
   "name": "corex-aria-vd",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Corex-Aria-vd",
   "main": "main.js",
   "author": "Corex Institut",
@@ -17,22 +17,25 @@
   },
   "build": {
     "appId": "com.corex.aria.vd",
-    "productName": "Corex Aria vd",
+    "productName": "Corex-Aria-vd",
+    "icon": "ressources/corex_aria.ico",
     "asar": true,
     "compression": "maximum",
     "files": [
       "main.js",
       "index.js",
+      "micro.js",
+      "preload.js",
       "ressources/**/*",
       "package.json"
     ],
     "win": {
       "target": "nsis",
-      "icon": "ressources/ico.png"
+      "icon": "ressources/corex_aria.ico"
     },
     "nsis": {
-      "installerIcon": "ressources/ico.png",
-      "uninstallerIcon": "ressources/ico.png",
+      "installerIcon": "ressources/corex_aria.ico",
+      "uninstallerIcon": "ressources/corex_aria.ico",
       "oneClick": false,
       "allowToChangeInstallationDirectory": true,
       "deleteAppDataOnUninstall": true
