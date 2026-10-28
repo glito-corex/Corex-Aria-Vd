@@ -13,27 +13,17 @@ function rmv() {
     if (document.body) {
         //set entry point to the content
         const corexembedremovecontentUI = document.querySelectorAll("#adCtn, #menuBarEl, #perchance-error-indicator, #minimalModeMenuBtn, #perchanceConsoleEl, #mainModelTextEditorCtn, #mainOutputTemplateEditorCtn");         
-        const gutterverticalcorexariawrappembed = document.querySelector('#main .gutter.gutter-vertical');
 
         //use entry point for remove content
         corexembedremovecontentUI.forEach(el => el.remove());
-
-        if (gutterverticalcorexariawrappembed) {
-            gutterverticalcorexariawrappembed.remove();
-        }
 
         //set mutationObserver 
         const observer = new MutationObserver(function () {
             //set entry point to the content
             const corexembedremovecontentUI = document.querySelectorAll("#adCtn, #menuBarEl, #perchance-error-indicator, #minimalModeMenuBtn, #perchanceConsoleEl, #mainModelTextEditorCtn, #mainOutputTemplateEditorCtn");
-            const gutterverticalcorexariawrappembed = document.querySelector('#main .gutter.gutter-vertical');
 
             //use entry point for remove content
             corexembedremovecontentUI.forEach(el => el.remove());
-
-            if (gutterverticalcorexariawrappembed) {
-                gutterverticalcorexariawrappembed.remove();
-            }
         });
 
         //set the observe

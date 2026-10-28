@@ -19,7 +19,6 @@ disable-automation
 disable-blink-features=AutomationControlled
 disable-save-password-bubble
 disable-password-manager-reauthentication
-disable-canvas-aa
 disable-glsl-translator
 disable-gl-extensions
 disable-3d-apis

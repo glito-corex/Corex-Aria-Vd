@@ -120,9 +120,6 @@ if (!lck) {
         });
     }
 
-    //disable print warning and error chromium
-    app.disableHardwareAcceleration();
-
     //call (crWindow) for create root page 
     app.whenReady().then(async () => {
         crWindow();
